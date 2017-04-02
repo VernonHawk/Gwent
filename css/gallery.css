@@ -1,0 +1,37 @@
+body{
+            background: url(../img/bg.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+}
+
+.container{
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #607B8B;
+    border: 4px groove gold;
+    border-radius: 2%;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
+    box-shadow: 0px 0px 34px 0px rgba(3,255,234,1); 
+    margin-bottom: 10px;
+}
+
+.gallery-card{
+    width: 370px;
+    height: 480px;
+}
+
+.gallery-card-image-final{
+    width: 420px;
+    height: 500px;
+}
+
+.caption, .card-name-show-container, .card-tags-show-container, .card-descr-show-container {
+    margin: 3%;
+}
+
+.col-md-4{
+    padding: 5px!important;
+}

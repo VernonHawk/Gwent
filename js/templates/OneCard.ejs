@@ -1,0 +1,20 @@
+<div id="border-layer" class="card-layer" style="background-image: url(img/borders/border<%= card.type %>.png)">
+    <div id="banner-layer" class="card-layer"
+         style="background-image: url(img/banners/banner<%=card.faction%><%= card.type === "Gold" ? 'Gold': ''%>.png)">
+        <div id="gem-layer" class="card-layer" style="background-image: url(img/gems/rarity<%= card.rarity %>.png)">
+            <div id="lane-layer" class="card-layer"
+                 <%if(card.lane != "None"){%> style="background-image: url(img/icons/lane<%= card.lane %>.png)"<%}%>>
+                <div id="loyalty-layer" class="card-layer"
+                     <%if(card.loyalty == "Disloyal"){%> style="background-image: url(img/icons/loyaltyDisloyal.png)"<%}%>>
+                    <div id="other-layer" class="card-layer"
+                            <%if(card.ability != "None"){%> style="background-image: url(img/icons/ability<%= card.ability %>.png)"<%}%>>
+
+                        <!--<%if(card.power > 0){%>
+                            <span class="card-power-show"> <%=card.power%></span>
+                        <%}%>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

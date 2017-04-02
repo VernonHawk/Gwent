@@ -1,0 +1,159 @@
+body{
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 40px;
+    width: 90%;
+    padding: 15px;
+    background-color: #607B8B;
+    border: 4px groove gold;
+    border-radius: 2%;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
+    box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
+    margin-bottom: 10px;
+}
+
+h3, label {
+    font-weight: 700!important;
+}
+.leftBlock, .rightBlock {
+    border: 4px inset gold;
+    margin: 5px;
+    background-color: dimgrey;
+}
+
+#kind-input-container{
+    margin: 2%;
+}
+
+#power-input-container{
+    margin-top: 40px;
+    width: 140px;
+}
+
+#kind-input-container > h2{
+    font-weight: 700;
+}
+
+#kind-input-container > label{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.input-row{
+    margin-left: 15px;
+}
+
+#descr-row{
+    width: 90%;
+    margin-top: 20px;
+    margin-right: 2%;
+}
+
+.btn-area>.media{
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.btn-area>.media>#fileload{
+    float: left;
+    width: 50%;
+}
+
+.btn-area>.media>.gal{
+    float: left;
+    width: 43%;
+}
+
+.btn-area>button{
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.card-layer {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    background: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+
+#image-layer{
+    z-index: 1;
+    width: 280px!important;
+    height: 390px!important;
+}
+
+.ci-main{
+    top: 65px;
+    left: 20px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.move-img-btn-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.move-img-btn{
+    margin: auto;
+}
+
+.caption, .card-name-show-container, .card-tags-show-container, .card-descr-show-container {
+    margin: 3%;
+}
+
+.caption{
+    margin-top: 80px;
+}
+
+.move-img-btn-container{
+    margin-top: 80px;
+}
+#timer-num-input-container{
+    margin-top: 43px;
+    width: 60px;
+}
+
+.modal-header>h4{
+    text-align: center;
+    width: 45%;
+    margin-right: 25%;
+    margin-left: 30%;
+}
+
+.modal-footer>.btn-default{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#card-image-final{
+    width: 400px;
+    height: 500px;
+}
+.card-power-show{
+    position: relative;
+    top: 75px;
+    left: 65px;
+    font-weight: 900;
+    color: white;
+    font-size: 35px;
+}
