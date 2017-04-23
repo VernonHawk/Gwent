@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/gwentDB');
+mongoose.connect('mongodb://gwentredactordb:v5CiKmJVxkaQdo2mSyuNNepMJZbgEJqyrKuIl18YubhL95RNwFTyITxGjkM6CDVe1RZuCgRIlbVRoIlspMWhzw==@gwentredactordb.documents.azure.com:10250/?ssl=true');
 
 var db = mongoose.connection;
 

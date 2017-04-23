@@ -21,9 +21,3 @@ build/Release
 node_modules
 
 .idea/
-
-finalCardImg/
-
-cropimg/
-
-backend\uploads/

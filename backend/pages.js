@@ -1,6 +1,6 @@
 exports.mainPage = function(req, res) {
     res.render('index', {
-        pageTitle: 'Gwent Card Make'
+        pageTitle: 'Gwent Redactor'
     });
 };
 
