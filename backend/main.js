@@ -18,7 +18,7 @@ function configureEndpoints(app) {
     app.use(express.static(path.join(__dirname, '..')));
 }
 
-function startServer(port) {
+function startServer() {
     var app = express();
 
     app.set('views', path.join(__dirname, 'views'));
