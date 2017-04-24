@@ -1,19 +1,19 @@
 body{
-    background: url(../img/bg.png) no-repeat center center fixed;
+    background: url(../img/bg.png) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
-.container{
-    margin-top: 40px;
+.container
+{
+    margin-top: 10px;
     width: 90%;
     padding: 15px;
     background-color: #607B8B;
     border: 4px groove gold;
-    border-radius: 2%;
+    border-radius: 30px;
     -webkit-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
     -moz-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
     box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
@@ -24,34 +24,38 @@ body{
 .col-md-6
 {
     width: 60% !important;
-
 }
 
-h1
+.col-md-4
+{
+    padding: 5px!important;
+}
+
+h1, h2, h3
 {
     color: white;
 }
 
-h2 {
-
-    color: white;
+h2
+{
+    margin-top: 10px !important;
 }
 
 h3, label {
     font-weight: 700!important;
-    color: white;
 }
+
 .leftBlock, .rightBlock {
     border: 4px inset gold;
+    border-radius: 25px;
     margin: 5px;
     background-color: tan;
-    background-image: url(../img/fon.PNG);
-    opacity:0.93;
+    background-image: url(../img/fon.png);
+    opacity: 0.93;
 }
 
 #kind-input-container{
     margin: 2%;
-
 }
 
 #power-input-container{
@@ -62,13 +66,11 @@ h3, label {
 #kind-input-container > h2{
     font-weight: 700;
     color: white;
-
 }
 
 #kind-input-container > label{
     font-weight: 700;
     font-size: 18px;
-
 }
 
 .input-row{
@@ -89,36 +91,20 @@ h3, label {
 .btn-area>.media>#fileload{
     float: left;
     width: 50%;
-
-}
-
-
-.btn-area>.media>.gal{
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em 2em;
-    outline: none;
-    border: 2px solid;
-    border-radius: 1px;
-    transition: 0.2s;
-    background: darkslategrey;
 }
 
 .btn-area>.media>.load {
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em 2em;
-    outline: none;
-    border: 2px solid;
-    border-radius: 1px;
-    transition: 0.2s;
-    background: darkslategrey;
+      display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  background: darkslategrey;
 
 }
 
@@ -129,17 +115,17 @@ h3, label {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em 2em;
-    outline: none;
-    border: 2px solid;
-    border-radius: 1px;
-    transition: 0.2s;
-    background: darkslategrey;
+     display: inline-block;
+   color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  background: darkslategrey;
 }
 
 .card-layer {
@@ -165,6 +151,8 @@ h3, label {
 
     border-radius: 25px;
     vertical-align: middle;
+    max-height: 300px;
+    max-width: 550px;
 }
 
 .toTheGallery
@@ -173,15 +161,10 @@ h3, label {
     position: relative; /* ������������� ���������������� */
 }
 
-#troll:hover
-{
-    opacity: 0.8;
-}
-
 .toTheGallery:hover::after {
     content: attr(data-title); /* ������� ����� */
     position: absolute; /* ���������� ���������������� */
-    left: 0; right: 0; bottom: 5px; /* ��������� ��������� */
+    left: -10%; right: 0; bottom: 5px; /* ��������� ��������� */
     z-index: 1; /* ���������� ��������� ������ ������ ��������� */
     color: khaki; /* ���� ������ */
     text-align: center; /* ������������ ������ �� ������ */
@@ -212,9 +195,7 @@ h3, label {
     -2px 1px 0 #000,
     2px -1px 0 #000,
     -2px -1px 0 #000;
-
 }
-
 
 .ci-main{
     top: 65px;
@@ -222,20 +203,6 @@ h3, label {
     position: relative;
     width: 400px;
     height: 400px;
-}
-
-.move-img-btn-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-
-
-}
-
-.move-img-btn{
-    margin: auto;
-
-
 }
 
 .caption, .card-name-show-container, .card-tags-show-container, .card-descr-show-container {
@@ -246,11 +213,10 @@ h3, label {
     margin-top: 80px;
 }
 
-
-
 .move-img-btn-container{
     margin-top: 80px;
 }
+
 #timer-num-input-container{
     margin-top: 43px;
     width: 60px;
@@ -273,6 +239,7 @@ h3, label {
     width: 400px;
     height: 500px;
 }
+
 .card-power-show{
     position: relative;
     top: 75px;
@@ -284,64 +251,34 @@ h3, label {
 
 .button2
 {
-    width: 90%;
+      width: 90%;
     margin-left: 15px;
     margin-right: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em 2em;
-    outline: none;
-    border: 2px solid;
-    border-radius: 1px;
-    transition: 0.2s;
-    background: darkslategrey;
+     display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  background: darkslategrey;
 }
 
 input {
     visibility: hidden;
 }
 
-#power-input {
-    visibility: visible;
-}
-
-#name-input
-{
-    visibility: visible;
-}
-
-#tags-input
-{
-    visibility: visible;
-}
-
-#img-load
-{
-    visibility: visible;
-}
-
-#card-name-show
-{
-    visibility: visible;
-}
-
-#card-tags-show
-{
+#power-input, #name-input, #tags-input, #img-load, #card-name-show, #card-tags-show  {
     visibility: visible;
 }
 
 .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
     margin-top: 0;
     margin-left: 0 !important;
-}
-
-.menu
-{
-    margin-bottom: 15px;
 }

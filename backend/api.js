@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://gwentredactordb:v5CiKmJVxkaQdo2mSyuNNepMJZbgEJqyrKuIl18YubhL95RNwFTyITxGjkM6CDVe1RZuCgRIlbVRoIlspMWhzw==@gwentredactordb.documents.azure.com:10250/?ssl=true');
-//process.env.MONGODB_URI
+mongoose.connect(process.env.MONGODB_URI);
+
 var db = mongoose.connection;
 
 db.on('error', function (err) {
