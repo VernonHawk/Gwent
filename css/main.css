@@ -1,5 +1,5 @@
 body{
-    background: url(../img/bg.png) no-repeat center center fixed;
+    background: url(../img/bg.png) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,12 +8,12 @@ body{
 }
 
 .container{
-    margin-top: 40px;
+    margin-top: 10px;
     width: 90%;
     padding: 15px;
     background-color: #607B8B;
     border: 4px groove gold;
-    border-radius: 2%;
+    border-radius: 30px;
     -webkit-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
     -moz-box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
     box-shadow: 0px 0px 34px 0px rgba(3,255,234,1);
@@ -27,13 +27,17 @@ body{
     
 }
 
-h1 
+.col-md-4 {
+    padding: 5px!important;
+}
+
+h1, h2
 {
     color: white;
 }
 
 h2 {
-    
+    margin-top: 10px !important;
     color: white;
 }
 
@@ -43,6 +47,7 @@ h3, label {
 }
 .leftBlock, .rightBlock {
     border: 4px inset gold;
+    border-radius: 25px;
     margin: 5px;
     background-color: tan;
     background-image: url(../img/fon-1.PNG);
@@ -165,18 +170,15 @@ h3, label {
     
     border-radius: 25px;
     vertical-align: middle;
+    max-height: 300px;
 }
 
 .toTheGallery
 {
-    display: inline-block; /* �������-������� ������� */
-    position: relative; /* ������������� ���������������� */
+display: inline-block; /* �������-������� ������� */
+position: relative; /* ������������� ���������������� */
 }
 
-#troll:hover
-{
-    opacity: 0.8;
-}
 
 .toTheGallery:hover::after {
     content: attr(data-title); /* ������� ����� */
@@ -215,7 +217,6 @@ h3, label {
 
 }
 
-
 .ci-main{
     top: 65px;
     left: 20px;
@@ -224,19 +225,6 @@ h3, label {
     height: 400px;
 }
 
-.move-img-btn-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-
-
-}
-
-.move-img-btn{
-    margin: auto;
-    
-    
-}
 
 .caption, .card-name-show-container, .card-tags-show-container, .card-descr-show-container {
     margin: 3%;
@@ -244,12 +232,6 @@ h3, label {
 
 .caption{
     margin-top: 80px;
-}
-
-.btn btn-primary move-img-btn
-{
-    
-    
 }
 
 .move-img-btn-container{
@@ -277,6 +259,7 @@ h3, label {
     width: 400px;
     height: 500px;
 }
+
 .card-power-show{
     position: relative;
     top: 75px;
@@ -311,7 +294,7 @@ input {
     visibility: hidden;
 }
 
- #power-input {
+#power-input {
     visibility: visible;
 }
 
