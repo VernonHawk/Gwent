@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Gwent Redactor</title>
+    <title>Gwent Card Maker</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <link type="text/css" href="css/main.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,21 +18,38 @@
     <script type="text/javascript" src="cropimg/cropimg.jquery.js"></script>
 
     <script type="text/javascript" src="js/supermain.js"></script>
+    
 
+    
 </head>
 <body>
+
 <div class="container">
+         <div class = "menu row">
+             
+          <div class = "toTheGallery col-md-4 col-md-offset-4"  data-title="Gallery">
+              <a href="gallery.html"><img id="troll" src="img/gallery.jpg" name ="troll" alt=""  class ="troll"> </a> 
+          </div>
+           
+            </div>
+  
     <div class="row">
+       
         <div class="col-md-7">
             <div class="leftBlock">
+                
                 <form action="" method="post" enctype="multipart/form-data">
                     <div id="kind-power-row" class="input-row">
                         <div class="row">
                             <div id="kind-input-container" class="col-md-7">
                                 <h2> Kind: </h2>
 
-                                <label class="radio-inline"><input type="radio" name="kind" value="Creature" checked>Creature</label>
-                                <label class="radio-inline"><input type="radio" name="kind" value="Special">Special or Leader</label>
+                                <label class="radio-inline"><input type="radio" name="kind" value="Creature" checked>
+                                    <img src="img/icons/Creature.png" alt=""/>
+                                    Creature</label>
+                                <label class="radio-inline"><input type="radio" name="kind" value="Special">
+                                    <img src="img/icons/Leader.png" alt=""/>
+                                    Special or Leader</label>
                             </div>
 
                             <div id="power-input-container" class="col-md-3 creature-only">
@@ -60,16 +78,26 @@
                             <div class="col-md-6">
                                 <h3>Type:</h3>
 
-                                <label class="radio-inline"><input type="radio" name="type" value="Bronze" checked>Bronze</label>
-                                <label class="radio-inline"><input type="radio" name="type" value="Silver">Silver</label>
-                                <label class="radio-inline"><input type="radio" name="type" value="Gold">Gold</label>
+                                <label class="radio-inline"><input type="radio" name="type" value="Bronze" checked>Bronze
+                                 <img src="img/banners/bronze.png" width="40" height="40" alt=""/>
+                                </label>
+                                <label class="radio-inline"><input type="radio" name="type" value="Silver">Silver
+                                 <img src="img/banners/silver.png" width="40" height="40" alt=""/>
+                                </label>
+                                <label class="radio-inline"><input type="radio" name="type" value="Gold">Gold
+                                 <img src="img/banners/gold.png" width="40" height="40" alt=""/>
+                                </label>
                             </div>
 
                             <div class="col-md-6 creature-only">
                                 <h3>Loyalty:</h3>
 
-                                <label class="radio-inline"><input type="radio" name="loyalty" value="Loyal" checked>Loyal</label>
-                                <label class="radio-inline"><input type="radio" name="loyalty" value="Disloyal">Disloyal</label>
+                                <label class="radio-inline"><input type="radio" name="loyalty" value="Loyal" checked>Loyal
+                                    <img src="img/icons/loyalty1.png" width="50" height="50" alt=""/>
+                                </label>
+                                <label class="radio-inline"><input type="radio" name="loyalty" value="Disloyal">Disloyal
+                                    <img src="img/icons/disloyal.png" width="50" height="50" alt=""/>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -77,29 +105,55 @@
                     <div id="faction-row" class="input-row">
                         <h3>Faction:</h3>
 
-                        <label class="radio-inline"><input type="radio" name="faction" value="Neutral" checked>Neutral</label>
-                        <label class="radio-inline"><input type="radio" name="faction" value="NR">Northern Realms</label>
-                        <label class="radio-inline"><input type="radio" name="faction" value="Scoiatael">Scoiatael</label>
-                        <label class="radio-inline"><input type="radio" name="faction" value="Monsters">Monsters</label>
-                        <label class="radio-inline"><input type="radio" name="faction" value="Skellige">Skellige</label>
+                        <label class="radio-inline"><input type="radio" name="faction" value="Neutral" checked>Neutral
+                        <img src="img/icons/neutral.png" width="60" height="60" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="faction" value="NR">Northern Realms
+                        <img src="img/icons/Norht.png" width="60" height="60" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="faction" value="Scoiatael">Scoiatael
+                        <img src="img/icons/Scoitael.png" width="60" height="60" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="faction" value="Monsters">Monsters
+                        <img src="img/icons/monsters.png" width="60" height="60" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="faction" value="Skellige">Skellige
+                        <img src="img/icons/skelige.png" width="60" height="60" alt=""/>
+                        </label>
                     </div>
 
                     <div id="rarity-row" class="input-row">
                         <h3>Rarity:</h3>
 
-                        <label class="radio-inline"><input type="radio" name="rarity" value="Common" checked>Common</label>
-                        <label class="radio-inline"><input type="radio" name="rarity" value="Rare">Rare</label>
-                        <label class="radio-inline"><input type="radio" name="rarity" value="Epic">Epic</label>
-                        <label class="radio-inline"><input type="radio" name="rarity" value="Legendary">Legendary</label>
+                        <label class="radio-inline"><input type="radio" name="rarity" value="Common" checked >Common
+                        <img src="img/gems/common.png" width="40" height="40" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="rarity" value="Rare">Rare
+                        <img src="img/gems/rare.png" width="40" height="40" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="rarity" value="Epic">Epic
+                        <img src="img/gems/epic.png" width="40" height="40" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="rarity" value="Legendary">Legendary
+                        <img src="img/gems/legendary.png" width="40" height="40" alt=""/>
+                        </label>
                     </div>
 
                     <div id="lane-row" class="input-row creature-only">
                         <h3>Lane:</h3>
 
-                        <label class="radio-inline"><input type="radio" name="lane" value="Melee" checked>Melee</label>
-                        <label class="radio-inline"><input type="radio" name="lane" value="Ranged">Ranged</label>
-                        <label class="radio-inline"><input type="radio" name="lane" value="Siege">Siege</label>
-                        <label class="radio-inline"><input type="radio" name="lane" value="Any">Any</label>
+                        <label class="radio-inline"><input type="radio" name="lane" value="Melee" checked>Melee
+                        <img src="img/gems/melee.png" width="50" height="50" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="lane" value="Ranged">Ranged
+                        <img src="img/gems/ranged.png" width="50" height="50" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="lane" value="Siege">Siege
+                        <img src="img/gems/siege.png" width="50" height="50" alt=""/>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="lane" value="Any">Any
+                        <img src="img/gems/any.png" width="50" height="50" alt=""/>
+                        </label>
                     </div>
 
                     <div id="ability-row" class="input-row creature-only">
@@ -107,10 +161,15 @@
                             <div class="col-md-6">
                                 <h3>Abilities:</h3>
 
-                                <label class="radio-inline"><input type="radio" name="ability" value="None" checked>None</label>
-                                <label class="radio-inline"><input type="radio" name="ability" value="Death">Death</label>
-                                <label class="radio-inline"><input type="radio" name="ability" value="Fire">Fire</label>
-                                <label class="radio-inline"><input type="radio" name="ability" value="Timer">Timer</label>
+                                <label class="radio-inline"><input type="radio" name="ability" value="None" checked>None
+                                </label>
+                                <label class="radio-inline"><input type="radio" name="ability" value="Death">Death
+                                <img src="img/icons/Deth1.png" width="40" height="50" alt=""/>
+                                </label>
+                                <label class="radio-inline"><input type="radio" name="ability" value="Fire">Fire
+                                <img src="img/icons/Fire1.png" width="40" height="50" alt=""/>
+                                </label>
+                                
                             </div>
 
                             <div class="col-md-6">
@@ -130,9 +189,10 @@
 
                     <div class="btn-area">
                         <div class="media">
-                            <input type="file" name="file" id="img-load">
-
-                            <button class="gal"><a href="gallery.html">Gallery</a></button>
+                            <button class = "load"> <input type="file" name="file" id="img-load"></button>
+                            
+                          
+                            
                         </div>
 
                         <button type="button" name="finish-button" data-toggle="modal" data-target="#myModal">Finish</button>
@@ -164,17 +224,18 @@
         <div class="col-md-5">
             <div class="rightBlock">
                 <div id="card-preview">
-                    <img id="image-layer" src="img/sign.png" class="image-layer">
+                    <img id="image-layer" src="img/Card.jpg" class="image-layer">
 
                     <div id="layers" class="">
 
                     </div>
                 </div>
-
+                    <!-- Move button
                 <div class="move-img-btn-container">
                     <button type="button" class="btn btn-primary move-img-btn">Move Image</button>
+                    
                 </div>
-
+                        -->
                 <div class="caption">
                     <div class="card-name-show-container">
                         <label for="card-name-show">Name:</label>
