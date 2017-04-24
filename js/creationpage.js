@@ -140,7 +140,7 @@ $('[name = finish-button]').click(function () {
         processData: false,
         contentType: false,
         success: function (data) {
-            console.log('upload successful!\n' + data);
+            //console.log('upload successful!\n' + data);
             $("#card-image-final").attr("src", "../finalCardImg/" + data);
         }
     });

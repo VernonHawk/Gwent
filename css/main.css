@@ -4,10 +4,10 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
 
-.container{
+.container
+{
     margin-top: 10px;
     width: 90%;
     padding: 15px;
@@ -24,27 +24,27 @@ body{
 .col-md-6
 {
     width: 60% !important;
-    
 }
 
-.col-md-4 {
+.col-md-4
+{
     padding: 5px!important;
 }
 
-h1, h2
+h1, h2, h3
 {
     color: white;
 }
 
-h2 {
+h2
+{
     margin-top: 10px !important;
-    color: white;
 }
 
 h3, label {
     font-weight: 700!important;
-    color: white;
 }
+
 .leftBlock, .rightBlock {
     border: 4px inset gold;
     border-radius: 25px;
@@ -66,13 +66,11 @@ h3, label {
 #kind-input-container > h2{
     font-weight: 700;
     color: white;
-    
 }
 
 #kind-input-container > label{
     font-weight: 700;
     font-size: 18px;
-    
 }
 
 .input-row{
@@ -93,20 +91,6 @@ h3, label {
 .btn-area>.media>#fileload{
     float: left;
     width: 50%;
-}
-
-.btn-area>.media>.gal{
-  display: inline-block;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  user-select: none;
-  padding: .5em 2em;
-  outline: none;
-  border: 2px solid;
-  border-radius: 1px;
-  transition: 0.2s;
-  background: darkslategrey;
 }
 
 .btn-area>.media>.load {
@@ -173,10 +157,9 @@ h3, label {
 
 .toTheGallery
 {
-display: inline-block; /* �������-������� ������� */
-position: relative; /* ������������� ���������������� */
+    display: inline-block; /* �������-������� ������� */
+    position: relative; /* ������������� ���������������� */
 }
-
 
 .toTheGallery:hover::after {
     content: attr(data-title); /* ������� ����� */

@@ -27,7 +27,7 @@ $(document).ready(function () {
             url: '/api/get-card-list/',
             type: 'GET',
             success: function (data) {
-                console.log('load successful!\n' + data);
+                //console.log('load successful!\n' + data);
                 data.forEach(showOneCard)
             },
             error: function() {
