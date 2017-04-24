@@ -170,7 +170,7 @@ h3, label {
     border-radius: 25px;
     vertical-align: middle;
     max-height: 300px;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .toTheGallery
@@ -183,7 +183,7 @@ position: relative; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
 .toTheGallery:hover::after {
     content: attr(data-title); /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ */
     position: absolute; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-    left: 0; right: 0; bottom: 5px; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    left: -10%; right: 0; bottom: 5px; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     z-index: 1; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     color: khaki; /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     text-align: center; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
@@ -213,8 +213,7 @@ position: relative; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
     2px 1px 0 #000, 
     -2px 1px 0 #000, 
     2px -1px 0 #000, 
-    -2px -1px 0 #000; 
-
+    -2px -1px 0 #000;
 }
 
 .ci-main{
@@ -224,7 +223,6 @@ position: relative; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
     width: 400px;
     height: 400px;
 }
-
 
 .caption, .card-name-show-container, .card-tags-show-container, .card-descr-show-container {
     margin: 3%;
@@ -294,32 +292,7 @@ input {
     visibility: hidden;
 }
 
-#power-input {
-    visibility: visible;
-}
-
-#name-input
-{
-    visibility: visible;
-}
-
-#tags-input
-{
-    visibility: visible;
-}
-
-#img-load
-{
-    visibility: visible;
-}
-
-#card-name-show
-{
-    visibility: visible;
-}
-
-#card-tags-show
-{
+#power-input, #name-input, #tags-input, #img-load, #card-name-show, #card-tags-show  {
     visibility: visible;
 }
 
