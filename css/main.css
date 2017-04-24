@@ -50,13 +50,12 @@ h3, label {
     border-radius: 25px;
     margin: 5px;
     background-color: tan;
-    background-image: url(../img/fon-1.PNG);
-    opacity:0.93;
+    background-image: url(../img/fon.png);
+    opacity: 0.93;
 }
 
 #kind-input-container{
     margin: 2%;
-    
 }
 
 #power-input-container{
@@ -171,6 +170,7 @@ h3, label {
     border-radius: 25px;
     vertical-align: middle;
     max-height: 300px;
+    max-width: 500px;
 }
 
 .toTheGallery
