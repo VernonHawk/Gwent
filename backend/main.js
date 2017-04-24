@@ -31,8 +31,8 @@ function startServer() {
 
     configureEndpoints(app);
 
-    app.listen(process.env.PORT, function () {
-        console.log('My Application Running on http://localhost:'+process.env.PORT+'/');
+    app.listen(5050, function () {
+        console.log('My Application Running on http://localhost:'+5050+'/');
     });
 }
 
