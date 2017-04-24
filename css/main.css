@@ -93,9 +93,7 @@ h3, label {
 .btn-area>.media>#fileload{
     float: left;
     width: 50%;
-    
 }
-
 
 .btn-area>.media>.gal{
   display: inline-block;
@@ -134,7 +132,7 @@ h3, label {
     margin-bottom: 10px;
     text-align: center;
      display: inline-block;
-  color: white;
+   color: white;
   font-weight: 700;
   text-decoration: none;
   user-select: none;
@@ -299,9 +297,4 @@ input {
 .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
     margin-top: 0;
     margin-left: 0 !important;
-}
-
-.menu
-{
-    margin-bottom: 15px;
 }
