@@ -3,7 +3,6 @@ var path = require('path');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 
-
 function configureEndpoints(app) {
     var pages = require('./pages');
     var api = require('./api');
@@ -32,8 +31,8 @@ function startServer(port) {
 
     configureEndpoints(app);
 
-    app.listen(port, function () {
-        console.log('My Application Running on http://localhost:'+port+'/');
+    app.listen(process.env.PORT, function () {
+        console.log('My Application Running on http://localhost:'+process.env.PORT+'/');
     });
 }
 

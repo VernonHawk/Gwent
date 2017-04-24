@@ -1,5 +1,5 @@
 {
-  "name": "Gwent",
+  "name": "gwent-redactor",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
